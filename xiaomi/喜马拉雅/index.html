@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_x/common.css">
+    <link rel="stylesheet" href="css_x/index.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2049247_j9vmna0bi1.css">
+</head>
+
+<body>
+    <div class="nav">
+        <div class="header">
+            <div class="word">喜马拉雅</div>
+            <div class="btn">
+                <div class="sousuo">
+                    <span class="iconfont icon-sousuo"></span>
+                    <p class="ss">搜索</p>
+                </div>
+            </div>
+            <div class="btn-right">
+                <div class="open">
+                    <p class="op">打开APP</p>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="tab">
+                <span class="tab-list active">推荐
+                    <div class="red-line1s"></div>
+                </span>
+                <span class="tab-list">有声书
+                    <div class="red-line2"></div>
+                </span>
+                <span class="tab-list">相声
+                    <div class="red-line3"></div>
+                </span>
+                <span class="tab-list">音乐</span>
+                <span class="tab-list">儿童</span>
+                <span class="tab-list">头条</span>
+                <span class="tab-list">人文</span>
+            </div>
+            <div class="line"></div>
+            <!-- <div class="red-line1"></div> -->
+
+            <div class="content active">
+                <div class="content-t">
+                    <div class="photo-f">
+                        <img src="img/wKgLgFyQujLCAVYRAAAuwA7DZMg198.png" alt="">
+                        <img src="img/wKgLgVyQuqWRZsJtAAAnr8tg4rs307.png" alt="">
+                        <img src="img/wKgLeVziZxHRlc-lAAAO9ZkPU-I489.png" alt="">
+                    </div>
+                    <div class="words">
+                        <span class="wd-f">排行榜</span>
+                        <span class="wd-s ">听单</span>
+                        <span class="wd-t">分类</span>
+                    </div>
+                    <div class="listen">
+                        <img src="img/wKgMZl0W1legiUgkAACPrBBFcJ4381.png" alt="">
+                    </div>
+                    <div class="new-content">
+                        <div class="new">
+                            <h2 class="title">最新专辑</h2>
+                            <div class="right-ico">
+                                <span class="iconfont icon-jiantouyou"></span>
+                                <p class="right-words">更多</p>
+                            </div>
+                        </div>
+                        <div class="ph_wo">
+                            <div class="left-photo">
+                                <img src="img/wKgMZ1z7asCSSAR8AAFp44juMnc336.png"
+                                    alt="">
+                            </div>
+                            <div class="right-text">
+                                <h3 class="text">习近平新时代中国特色社会主义思想学习纲要</h3>
+                                <h2 class="little-text">不忘初心、牢记使命”主题教育重要学习材料</h2>
+                            </div>
+                            <div class="sound">
+                                <span class="iconfont icon-sound-wave"></span>
+                                <span>100</span>
+                                <span class="iconfont icon-V"></span>
+                                <span>1.51亿</span>
+                            </div>
+                        </div>
+
+                        <div class="ph_sz">
+                            <div class="left-psz">
+                                <img src="img/wKgO0V5oJYbRNqvEAAFphQM6dbI86.png"
+                                    alt="">
+                            </div>
+                            <div class="right-text1">
+                                <h3 class="text1">深圳头条</h3>
+                                <h2 class="little-text1">美好生活，深声不息</h2>
+                            </div>
+                        </div>
+                        <div class="sound_1">
+                            <span class="iconfont icon-sound-wave"></span>
+                            <span>1558</span>
+                            <span class="iconfont icon-V"></span>
+                            <span>8336.50万</span>
+                        </div>
+
+                        <div class="ph_sz_1">
+                            <div class="left-psz-1">
+                                <img src="img/wKgO0F46leyzGHNAAAILP1GAwZA701.png"
+                                    alt="">
+                            </div>
+                            <div class="right-text2">
+                                <h3 class="text2">新型肺炎疫情下的感动瞬间</h3>
+                                <h2 class="little-text2">用声音记录这段特殊时期的温暖。在未来希望有一天，当你渐渐忘却了这场疫情，疲于...</h2>
+                            </div>
+                        </div>
+                        <div class="sound_2">
+                            <span class="iconfont icon-sound-wave"></span>
+                            <span>1558</span>
+                            <span class="iconfont icon-V"></span>
+                            <span>8336.50万</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            var aspan = document.getElementsByClassName("tab-list");
+            // var aContent = document.getElementsByClassName("content-text");
+            for(var i = 0;i<aspan.length;i++){
+                aspan[i].index = i;
+                aspan[i].onclick = function(){
+                    for(var j = 0;j<aspan.length;j++){
+                        aspan[j].setAttribute("class","");
+                        // aContent[j].setAttribute("class","content-text")
+                    }
+                    this.setAttribute("class","tab-list active");
+                    // aContent[this.index].setAttribute("class","content-text active");
+                }
+            }
+        </script>
+</body>
+
+</html>
